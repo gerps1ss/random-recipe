@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Журнал проекта</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="modal" id="loginModal">
+  <div class="modal-window">
+    <button class="modal-close" id="closeLogin">×</button>
+
+    <img src="images/logo.png" alt="Логотип" class="modal-logo">
+
+    <h2>Вход</h2>
+    <p>Добро пожаловать!</p>
+
+    <input type="email" placeholder="Email">
+
+    <div class="password-box">
+      <input type="password" placeholder="Пароль" id="passwordInput">
+    </div>
+
+    <button class="modal-login">Войти</button>
+
+    <div class="modal-line">
+      <span></span>
+      <p>или</p>
+      <span></span>
+    </div>
+
+    <button class="modal-register">Зарегистрироваться</button>
+
+    <a href="#" class="forgot">Забыли пароль?</a>
+  </div>
+</div>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Логотип">
+    <div class="logo-text">
+      <h2>Случайный рецепт</h2>
+      <p>из того, что есть</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a href="recipes.html">Рецепты</a>
+    <a href="about.html">О проекте</a>
+    <a href="team.html">Участники</a>
+    <a href="journal.html" class="active">Журнал</a>
+    <a href="resources.html">Ресурсы</a>
+  </nav>
+
+  <a href="#" class="login-btn" id="openLogin">Войти</a>
+</header>
+
+<main class="journal-page">
+  <section class="journal-hero">
+	  <div class="journal-hero-text">
+		<h1>Журнал проекта</h1>
+		<p>
+		  Здесь мы делимся важными этапами работы<br>
+		  над проектом и обновлениями.
+		</p>
+	  </div>
+  </section>
+
+  <section class="timeline">
+  <div class="timeline-icons">
+	  <div>
+		<img src="images/journal/start.png" alt="Старт проекта">
+	  </div>
+
+	  <div>
+		<img src="images/journal/design.png" alt="Разработка интерфейса">
+	  </div>
+
+	  <div>
+		<img src="images/journal/pages.png" alt="Добавление страниц">
+	  </div>
+
+	  <div>
+		<img src="images/journal/launch.png" alt="Подготовка к запуску">
+	  </div>
+   </div>
+
+    <div class="timeline-posts">
+      <article class="journal-card">
+        <div class="journal-date">01.06.2026</div>
+        <span class="journal-tag">Планирование</span>
+        <h2>Старт проекта</h2>
+        <p>
+          Создан репозиторий GitHub. Подготовлена структура проекта
+          и определены основные страницы сайта.
+        </p>
+        <div class="journal-link">▧ Добавлены схемы и черновики</div>
+      </article>
+
+      <article class="journal-card">
+        <div class="journal-date">05.06.2026</div>
+        <span class="journal-tag">Разработка</span>
+        <h2>Разработка интерфейса</h2>
+        <p>
+          Разработан интерфейс главной страницы и страницы рецептов.
+          Реализована навигация между разделами.
+        </p>
+        <div class="journal-link">▧ Скриншоты интерфейса</div>
+      </article>
+
+      <article class="journal-card">
+        <div class="journal-date">10.06.2026</div>
+        <span class="journal-tag">Тестирование</span>
+        <h2>Добавление страниц</h2>
+        <p>
+          Добавлены страницы ингредиентов и описания проекта.
+          Проведено тестирование адаптивности сайта.
+        </p>
+        <div class="journal-link">▧ Отчёт о тестировании</div>
+      </article>
+
+      <article class="journal-card">
+        <div class="journal-date">15.06.2026</div>
+        <span class="journal-tag">Завершение</span>
+        <h2>Подготовка к запуску</h2>
+        <p>
+          Оптимизирована производительность сайта, проверены все разделы.
+          Проект готов к публикации.
+        </p>
+        <div class="journal-link">▧ Финальная проверка</div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    Гераскина Ю.И.<br>
+    Малышева Ю.А.
+  </div>
+  <div class="footer-center">Московский Политех</div>
+  <div class="footer-right">Группа 253-331</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

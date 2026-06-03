@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Рецепты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="modal" id="loginModal">
+  <div class="modal-window">
+    <button class="modal-close" id="closeLogin">×</button>
+
+    <img src="images/logo.png" alt="Логотип" class="modal-logo">
+
+    <h2>Вход</h2>
+    <p>Добро пожаловать!</p>
+
+    <input type="email" placeholder="Email">
+
+    <div class="password-box">
+      <input type="password" placeholder="Пароль" id="passwordInput">
+    </div>
+
+    <button class="modal-login">Войти</button>
+
+    <div class="modal-line">
+      <span></span>
+      <p>или</p>
+      <span></span>
+    </div>
+
+    <button class="modal-register">Зарегистрироваться</button>
+
+    <a href="#" class="forgot">Забыли пароль?</a>
+  </div>
+</div>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Логотип">
+    <div class="logo-text">
+      <h2>Случайный рецепт</h2>
+      <p>из того, что есть</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a href="recipes.html" class="active">Рецепты</a>
+    <a href="about.html">О проекте</a>
+    <a href="team.html">Участники</a>
+    <a href="journal.html">Журнал</a>
+    <a href="resources.html">Ресурсы</a>
+  </nav>
+
+  <a href="#" class="login-btn" id="openLogin">Войти</a>
+</header>
+
+<main class="recipes-page">
+  <h1>Рецепты</h1>
+  <p class="recipes-count">Мы подобрали 42 рецепта</p>
+
+  <div class="filters">
+  <button class="filter-active" id="allRecipes">Все рецепты</button>
+
+  <select id="timeFilter">
+    <option value="all">Время приготовления</option>
+    <option value="15">до 15 минут</option>
+    <option value="30">до 30 минут</option>
+    <option value="60">до 60 минут</option>
+  </select>
+
+  <select id="difficultyFilter">
+    <option value="all">Сложность</option>
+    <option value="Легко">Легко</option>
+    <option value="Средне">Средне</option>
+    <option value="Сложно">Сложно</option>
+  </select>
+
+  <select id="ingredientsFilter">
+    <option value="all">Ингредиенты</option>
+    <option value="курица">Курица</option>
+    <option value="рис">Рис</option>
+    <option value="овощи">Овощи</option>
+    <option value="картофель">Картофель</option>
+    <option value="грибы">Грибы</option>
+  </select>
+
+  <select id="sortFilter" class="sort-select">
+    <option value="new">Сначала новые</option>
+    <option value="old">Сначала старые</option>
+    <option value="time">По времени приготовления</option>
+  </select>
+</div>
+
+  <section class="recipes-grid">
+    <div class="recipe-card" data-time="25" data-difficulty="Легко" data-ingredients="грибы паста сливки" data-date="8">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/pastagrib.png" alt="Паста">
+      <h3>Паста с грибами<br>и сливочным соусом</h3>
+      <p>◷ 25 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 2 порции</p>
+    </div>
+
+    <div class="recipe-card" data-time="20" data-difficulty="Легко" data-ingredients="курица овощи огурец помидоры" data-date="7">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/saladchiken.png" alt="Салат">
+      <h3>Салат с курицей<br>и свежими овощами</h3>
+      <p>◷ 20 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 2 порции</p>
+    </div>
+
+    <div class="recipe-card" data-time="30" data-difficulty="Средне" data-ingredients="рис овощи яйцо" data-date="6">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/rice.png" alt="Рис">
+      <h3>Жареный рис<br>с овощами и яйцом</h3>
+      <p>◷ 30 мин &nbsp;&nbsp;▥ Средне &nbsp;&nbsp;♙ 2 порции</p>
+    </div>
+
+    <div class="recipe-card" data-time="35" data-difficulty="Легко" data-ingredients="тыква сухарики" data-date="5">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/creamsup.png" alt="Суп">
+      <h3>Крем-суп из тыквы<br>с сухариками</h3>
+      <p>◷ 35 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 2 порции</p>
+    </div>
+
+    <div class="recipe-card" data-time="40" data-difficulty="Средне" data-ingredients="кабачок сыр овощи" data-date="4">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/casserole.png" alt="Запеканка">
+      <h3>Запеканка из кабачков<br>с сыром</h3>
+      <p>◷ 40 мин &nbsp;&nbsp;▥ Средне &nbsp;&nbsp;♙ 3 порции</p>
+    </div>
+
+    <div class="recipe-card" data-time="15" data-difficulty="Легко" data-ingredients="яйцо помидоры зелень" data-date="3">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/omelet.png" alt="Омлет">
+      <h3>Омлет с помидорами<br>и зеленью</h3>
+      <p>◷ 15 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 1 порция</p>
+    </div>
+
+    <div class="recipe-card" data-time="60" data-difficulty="Средне" data-ingredients="курица картофель" data-date="2">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/chikenpotate.png" alt="Курица">
+      <h3>Курица с картофелем<br>в духовке</h3>
+      <p>◷ 60 мин &nbsp;&nbsp;▥ Средне &nbsp;&nbsp;♙ 2 порции</p>
+    </div>
+
+    <div class="recipe-card" data-time="35" data-difficulty="Легко" data-ingredients="чечевица овощи" data-date="1">
+      <span class="heart">♡</span>
+      <img src="images/recipe_photo/supchecevitza.png" alt="Чечевичный суп">
+      <h3>Чечевичный суп<br>с овощами</h3>
+      <p>◷ 35 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 3 порции</p>
+    </div>
+	
+	<div class="recipe-card" data-time="25" data-difficulty="Легко" data-ingredients="рыба лимон овощи" data-date="12">
+	  <span class="heart">♡</span>
+	  <img src="images/recipe_photo/fish.png" alt="Рыба">
+	  <h3>Запечённая рыба<br>с овощами</h3>
+	  <p>◷ 25 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 2 порции</p>
+	</div>
+
+	<div class="recipe-card" data-time="50" data-difficulty="Средне" data-ingredients="говядина картофель овощи" data-date="11">
+	  <span class="heart">♡</span>
+	  <img src="images/recipe_photo/ragu.png" alt="Рагу">
+	  <h3>Говяжье рагу<br>с картофелем</h3>
+	  <p>◷ 50 мин &nbsp;&nbsp;▥ Средне &nbsp;&nbsp;♙ 4 порции</p>
+	</div>
+
+	<div class="recipe-card" data-time="10" data-difficulty="Легко" data-ingredients="банан ягоды йогурт" data-date="10">
+	  <span class="heart">♡</span>
+	  <img src="images/recipe_photo/smuzi.png" alt="Смузи">
+	  <h3>Фруктовый смузи<br>с ягодами</h3>
+	  <p>◷ 10 мин &nbsp;&nbsp;▥ Легко &nbsp;&nbsp;♙ 1 порция</p>
+	</div>
+
+	<div class="recipe-card" data-time="45" data-difficulty="Средне" data-ingredients="макароны сыр ветчина" data-date="9">
+	  <span class="heart">♡</span>
+	  <img src="images/recipe_photo/macandchees.png" alt="Запеканка">
+	  <h3>Макаронная запеканка<br>с сыром</h3>
+	  <p>◷ 45 мин &nbsp;&nbsp;▥ Средне &nbsp;&nbsp;♙ 3 порции</p>
+	</div>
+  </section>
+
+  <div class="pagination"></div>
+</main>
+
+<footer class="footer">
+  <div>Гераскина Ю.И.<br>Малышева Ю.А.</div>
+  <div>Московский Политех</div>
+  <div>Группа 253-331</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ресурсы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="modal" id="loginModal">
+  <div class="modal-window">
+    <button class="modal-close" id="closeLogin">×</button>
+
+    <img src="images/logo.png" alt="Логотип" class="modal-logo">
+
+    <h2>Вход</h2>
+    <p>Добро пожаловать!</p>
+
+    <input type="email" placeholder="Email">
+
+    <div class="password-box">
+      <input type="password" placeholder="Пароль" id="passwordInput">
+    </div>
+
+    <button class="modal-login">Войти</button>
+
+    <div class="modal-line">
+      <span></span>
+      <p>или</p>
+      <span></span>
+    </div>
+
+    <button class="modal-register">Зарегистрироваться</button>
+
+    <a href="#" class="forgot">Забыли пароль?</a>
+  </div>
+</div>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Логотип">
+    <div class="logo-text">
+      <h2>Случайный рецепт</h2>
+      <p>из того, что есть</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a href="recipes.html">Рецепты</a>
+    <a href="about.html">О проекте</a>
+    <a href="team.html">Участники</a>
+    <a href="journal.html">Журнал</a>
+    <a href="resources.html" class="active">Ресурсы</a>
+  </nav>
+
+  <a href="#" class="login-btn" id="openLogin">Войти</a>
+</header>
+
+<main class="resources-page">
+  <section class="resources-hero">
+    <div>
+      <h1>Ресурсы</h1>
+      <p>
+        Здесь собраны полезные материалы, которые помогли<br>
+        в создании проекта и могут быть полезны вам для изучения,<br>
+        вдохновения и развития.
+      </p>
+    </div>
+
+    <img src="images/resources-bg.png" alt="Ресурсы">
+  </section>
+
+  <section class="resources-section">
+    <h2>✓ Полезные материалы для разработки</h2>
+
+    <div class="resources-cards">
+      <a class="resource-card" href="https://github.com/gerps1ss/random-recipe" target="_blank">
+        <div class="resource-icon">GH</div>
+        <h3>GitHub</h3>
+        <p>Платформа для хранения кода и совместной работы над проектами.</p>
+        <span>↗</span>
+      </a>
+
+      <a class="resource-card" href="https://metanit.com/web/html5/?ysclid=mpxs7usd37705896115" target="_blank">
+        <div class="resource-icon">M</div>
+        <h3>Metanit</h3>
+        <p>Документация по HTML, CSS.</p>
+        <span>↗</span>
+      </a>
+
+      <a class="resource-card" href="https://metanit.com/web/javascript/?ysclid=mpxs976ekx18855111" target="_blank">
+        <div class="resource-icon">M</div>
+        <h3>Metanit</h3>
+        <p>Документация по JavaScript.</p>
+        <span>↗</span>
+      </a>
+
+      <a class="resource-card" href="https://chatgpt.com/" target="_blank">
+        <div class="resource-icon">GPT</div>
+        <h3>ChatCPT</h3>
+        <p>Фотографии и иконки.</p>
+        <span>↗</span>
+      </a>
+
+      <a class="resource-card" href="https://notepad-plus-plus.org/" target="_blank">
+        <div class="resource-icon">Notepad</div>
+        <h3>Notepad++</h3>
+        <p>Написание кода.</p>
+        <span>↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="resources-lists">
+    <div class="resource-list">
+      <h2>Полезные статьи</h2>
+
+      <a href="https://vkusvill.ru/media/journal/osnovnye-printsipy-pravilnogo-pitaniya.html?ysclid=mpxs5catmy738614305">▤ Основы правильного питания: простые шаги к здоровью <span>↗</span></a>
+      <a href="https://www.edimdoma.ru/jivem_doma/posts/28733-10-layfhakov-kak-sokratit-pischevye-othody-i-sekonomit-dengi?ysclid=mpxs5yo7rh630949874">▤ Как сократить пищевые отходы дома: практические советы <span>↗</span></a>
+      <a href="https://dzen.ru/a/Z9GIPAj-hWouw8Yq?ysclid=mpxs6bjblm739229499">▤ Осознанное потребление: как заботиться о себе и планете <span>↗</span></a>
+    </div>
+
+    <div class="resource-list">
+      <h2>Ресурсы с рецептами</h2>
+
+      <a href="https://www.say7.info/cook/">♨ Say7 — большая база рецептов <span>↗</span></a>
+      <a href="https://1000.menu/advice?ysclid=mpxs3g36vo742651375">♨ 1000menu— проверенные рецепты и советы <span>↗</span></a>
+      <a href="https://food.ru/recipes?ysclid=mpxs4fqto3703910140">♨ Food — персональные рекомендации рецептов <span>↗</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    Гераскина Ю.И.<br>
+    Малышева Ю.А.
+  </div>
+  <div class="footer-center">Московский Политех</div>
+  <div class="footer-right">Группа 253-331</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

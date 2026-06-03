@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Случайный рецепт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="modal" id="loginModal">
+  <div class="modal-window">
+    <button class="modal-close" id="closeLogin">×</button>
+
+    <img src="images/logo.png" alt="Логотип" class="modal-logo">
+
+    <h2>Вход</h2>
+    <p>Добро пожаловать!</p>
+
+    <input type="email" placeholder="Email">
+
+    <div class="password-box">
+      <input type="password" placeholder="Пароль" id="passwordInput">
+    </div>
+
+    <button class="modal-login">Войти</button>
+
+    <div class="modal-line">
+      <span></span>
+      <p>или</p>
+      <span></span>
+    </div>
+
+    <button class="modal-register">Зарегистрироваться</button>
+
+    <a href="#" class="forgot">Забыли пароль?</a>
+  </div>
+</div>
+
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="images/logo.png" alt="Логотип">
+        <div class="logo-text">
+            <h2>Случайный рецепт</h2>
+            <p>из того, что есть</p>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="recipes.html">Рецепты</a>
+        <a href="about.html">О проекте</a>
+        <a href="team.html">Участники</a>
+        <a href="journal.html">Журнал</a>
+        <a href="resources.html">Ресурсы</a>
+    </nav>
+
+    <a href="#" class="login-btn" id="openLogin">Войти</a>
+</header>
+
+<main class="hero">
+  <section class="hero-content">
+    <h1>
+      Случайный рецепт<br>
+      из того, что есть
+    </h1>
+
+    <p class="subtitle">
+      У вас есть ингредиенты, но нет идей?<br>
+      Мы подберем для вас вкусный рецепт.
+    </p>
+
+    <div class="search-box">
+      <span>⌕</span>
+      <input type="text" id="ingredientsInput" placeholder="Введите ингредиенты через запятую">
+      <button id="searchBtn">→</button>
+    </div>
+
+    <div class="examples">
+      <span>Например:</span>
+      <button>курица</button>
+      <button>рис</button>
+      <button>лук</button>
+      <button>морковь</button>
+      <button>...</button>
+    </div>
+  </section>
+
+  <section class="hero-image">
+    <img src="images/salad.png" alt="Салат с курицей">
+  </section>
+</main>
+
+<script src="script.js"></script>
+	<footer class="footer">
+		<div class="footer-left">
+			Гераскина Ю.И.<br>
+			Малышева Ю.А.
+		</div>
+
+		<div class="footer-center">
+			Московский Политех
+		</div>
+
+		<div class="footer-right">
+			Группа 253-331
+		</div>
+	</footer>
+</body>
+</html>
